@@ -1,0 +1,7 @@
+{
+  "name": "FixMyCity",
+  "description": "A prototype for a web application that allows citizens to report and track neighborhood civic issues like potholes, garbage, and streetlight failures.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
