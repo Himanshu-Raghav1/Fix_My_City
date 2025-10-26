@@ -1,20 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+🏙️ Fix My City
 
-# Run and deploy your AI Studio app
+A modern web application that empowers citizens to report, track, and resolve civic issues in their neighborhoods. Users can submit complaints for problems like potholes, garbage dumping, and broken streetlights, while administrators can manage and update the status of these reports.
 
-This contains everything you need to run your app locally.
+This project is built with plain HTML, Tailwind CSS, and vanilla JavaScript, using localStorage to create a persistent user experience without requiring a backend database.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1cxJx7EVH8E5og4MdQb7aphT8EpVOzQeu
+✨ Features
 
-## Run Locally
+Role-Based Access: Separate views for Citizens and Administrators.
 
-**Prerequisites:**  Node.js
+Citizen Dashboard:
 
+Register new complaints with a detailed form.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Pinpoint issue locations using an interactive Google Map (with search and drag-and-drop).
+
+Use Geolocation to find the user's current location.
+
+View a personal dashboard with stats and recent activity.
+
+Mock user login/signup that persists in the browser.
+
+Admin Dashboard:
+
+View all submitted complaints in a sortable table.
+
+Update the status of any complaint (Pending, In Progress, Resolved).
+
+Public Dashboard: A global view showing all reports on a map, recent stats, and top contributors.
+
+AI Chatbot: An integrated Gemini AI chatbot to answer user questions about the app.
+
+Persistent Data: Uses browser localStorage to save all complaints and user sessions, simulating a full-stack experience.
+
+Fully Responsive: Clean and modern UI built with Tailwind CSS, works on all device sizes.
+
+🛠️ Tech Stack
+
+Frontend: HTML5, Tailwind CSS, Vanilla JavaScript (ES6+)
+
+APIs & Services:
+
+Google Maps API: For interactive maps, Places search, and Geocoding.
+
+Google Gemini AI: For the intelligent chatbot assistant.
+
+Storage: Browser localStorage
